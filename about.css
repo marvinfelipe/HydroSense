@@ -1,0 +1,280 @@
+/* Rotation for Mobile */
+@media screen and (max-width: 738px) {
+    html {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        height: 100vw;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        font-size: small;
+    }
+    .description{
+        font-size: small;
+    }
+    body {
+        width: 100vh;
+        height: 100vw;
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .gauges {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .gauge {
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    background-image: url('resources/brand/backgroundcolor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.navbar-brand img {
+    max-height: 40px;
+}
+.navbar-collapse {
+    text-align: center;
+    margin-left: 30px;
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Water Droplet Styles */
+.water-droplet {
+    position: relative;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.water-droplet img {
+    width: 80px;
+    height: auto;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=YourLogoFontFamily&display=swap'); 
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* --------------------Application Logo-------------------- */
+.app-logo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.app-logo .app_bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.app-logo .app_bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.app-logo .logobg {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+.app-logo .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    z-index: 2;
+    filter: contrast(200%);
+}
+
+.app-logo .logo-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-family: 'Roboto', Arial, sans-serif;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------About the Application-------------------- */
+.about-app {
+    background-image: url("resources/brand/backgroundcolor.jpg");
+    
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+
+}
+
+.content {
+    max-width: 800px;
+    
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+}
+
+/* --------------------Hardware-------------------- */
+.hardware {
+    background-color: #ffffff;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+    text-align: center; 
+}
+
+.image-left, .image-right {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+/* --------------------Team Section-------------------- */
+.team-section {
+    background-image: url("resources/brand/backgroundcolor.jpg");
+    padding: 10px;
+    background-size: cover;
+
+    
+}
+.team {
+    display: flex;
+}
+
+.logo-wrapper {
+    width: 300px;
+    height: 300px;
+    overflow: hidden; 
+    border-radius: 50%; 
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-wrapper img {
+    width: 100%; 
+    height: auto; 
+}
+
+.image-wrapper {
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 50%; 
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #ffffff; 
+}
+
+p {
+    font-size: 1rem;
+    color: #fff; 
+}
+
+.stealthy-kitten {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-top: 20px;
+}
