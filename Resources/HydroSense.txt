@@ -1,0 +1,248 @@
+HYDROSENSE
+
+Thalea Prince P. Baladhay
+Marvin Jomel O. Felipe
+Bernard Anton J. Millaro
+
+College of Information Technology
+University of Negros Occidental-Recoletos
+Bacolod City
+
+ABSTRACT
+The United Nations' Sustainable Development Goal (SDG) 6 aims to guarantee universal access to safe and affordable drinking water. However, many rural and underserved communities still face challenges in obtaining clean water, leading to increased risks of waterborne diseases from contaminated sources. In response to this critical issue, HydroSense was developed as a comprehensive water quality monitoring solution. This system, powered by an Arduino microcontroller, utilizes sensors to accurately measure key water parameters: Total Dissolved Solids (TDS), turbidity, pH, and temperature. The collected real-time data is transmitted to a user-friendly web application, providing users with clear visualizations of water quality metrics and offering tailored guidance on purification methods based on the analysis. Beyond its monitoring capabilities, HydroSense also serves as an educational tool by providing valuable hydrology resources to enhance awareness of effective water management and safety practices. By integrating sensor technology with an accessible interface, HydroSense directly contributes to achieving SDG 6, promoting access to clean and safe water, and highlighting the essential role of technology in protecting public health and fostering sustainable water usage.
+
+KEYWORDS: Water Quality Monitoring, Sensors, Arduino, Web Application, Total Dissolved Solids (TDS), Turbidity, pH, Sustainable Development Goal 6 (SDG 6)
+
+INTRODUCTION
+Clean water is essential to life, as hydration is the most basic function of water, necessary to keep the body of a living organism hydrated. It is important to preserve and sustain water availability for bodies that rely on water for digestion, metabolism, transportation of nutrients, and temperature regulation. One of the Sustainable Development Goals (SDGs) is SDG 6, clean water and sanitation, adopted by the United Nations (UN). SDG 6 clean water and sanitation goal is to ensure the availability and sustainable management of water sanitation for all and achieve universal and equitable access to safe and affordable drinking water for all. 
+Billions of people worldwide still live without safely managed drinking water, safely managed sanitation, and basic hygiene services, especially in rural areas and least developed countries. Globally, 44 percent of all household wastewater flows are not safely treated. Thus, access to clean water is fundamental to human health and well-being. They are essential to improving nutrition, preventing disease, and enabling health care. [UN2021] 
+In 2020, 47.46% of Filipinos had no access to clean drinking water [BC2021]. Contaminated water and poor sanitation are linked to the transmission of diseases such as cholera, diarrhea, dysentery, hepatitis A, typhoid, and polio [WHO2023]. According to an article by the Department of Health (DOH), the number of people suffering from typhoid fever rose 101% to 3,285 compared to 1,633 in the same period in 2022 [DV2023].
+To ensure safe water and proper sanitation is widely recognized as a fundamental human right. Although there has been some advancement toward meeting the Sustainable Development Goal on water and sanitation (SDG 6), current trends and levels of access remain troubling, highlighting the urgent need for solutions that accelerate progress and include everyone. In light of these concerns, the team proposes a combined software-hardware initiative that uses sensors to evaluate water safety levels, ensuring safe and high-quality drinking water. These sensors offer critical insights into contaminants such as heavy metals, organic pollutants, pathogens, and other harmful substances. As a fully integrated solution, HydroSense plays a pivotal role in preventing waterborne diseases and safeguarding drinking water quality for communities around the globe.
+HydroSense goes beyond a mere technological breakthrough, offering a crucial solution for communities battling waterborne illnesses linked to insufficient access to clean water. It does more than detect contaminants; it facilitates informed, data-driven decisions. By providing trustworthy resources and guides on hydrology, it equips users with essential knowledge of water management and purification strategies. These materials serve as invaluable references for understanding and effectively managing water resources. Through its integrated software and hardware components, HydroSense empowers communities to proactively monitor and maintain water quality, mitigating risks and safeguarding public health. HydroSense user-friendly interface ensures accessibility for users of all skill levels, encouraging widespread adoption. By raising awareness about waterborne diseases and prevention, it empowers communities to manage their water resources. Its scalable design enables integration with regional systems, creating pathways for more robust and comprehensive solutions.
+1.	Purpose 
+This project focuses on creating an Arduino-based device equipped with TDS, turbidity, temperature, and pH sensors to evaluate water quality and transmit real-time data to a web application. By doing so, HydroSense contributes to the United Nations' Sustainable Development Goal 6, which aims to ensure safe water and sanitation for everyone. The web application displays the collected data and provides tailored recommendations for water purification methods based on detected contaminants and raises awareness about health risks linked to consuming contaminated water. By integrating hardware and software, HydroSense empowers individuals and organizations to make informed decisions about water safety and take appropriate steps to secure access to clean, safe water, ultimately supporting the broader goal of achieving sustainable development worldwide.
+1.1.1	Development
+HydroSense was developed to address individuals' concerns about the quality of their drinking water at home. By providing a reliable and user-friendly device, HydroSense ensures accessibility for all users, empowering them to assess and maintain their water quality effectively. This user-centric approach promotes informed decision-making and proactive management of water resources.
+1.1.2	Web Application Integration
+The integration of web applications into HydroSense aims to create a centralized platform for real-time water quality monitoring and data visualization. This integration provides users access to sensor data from any smartphone or computer, facilitating timely decision-making and intervention. The web application features an intuitive interface, personalized water purification recommendations, and educational resources on water safety. It also supports historical data analysis and remote monitoring, adding value for individual and institutional users. Overall, this integration enhances HydroSense usability and effectiveness, advancing the goal of ensuring clean and safe drinking water.
+1.1.3	Data Visualization
+By enabling users to interpret water quality data collected by the sensors effectively, data visualization plays a crucial role in HydroSense. Users are able to quickly grasp key water quality parameters, identify trends, and spot anomalies. This visual representation facilitates informed decision-making and helps users take appropriate actions to ensure water safety. Additionally, it enhances user engagement and understanding, making complex data accessible to individuals with varying levels of technical expertise. Data visualization supports proactive water management and maintains clean and safe water sources.
+1.1.4	Water Quality Analysis
+Evaluating water safety and suitability for consumption and other purposes is vital in HydroSense. By examining data gathered from TDS, turbidity, temperature, and pH sensors, users gain a well-rounded view of water quality, helping to identify contaminants and pollutants such as dissolved solids and uncover potential health risks. Early detection of these risks enables swift and appropriate measures to ensure safe water. Additionally, the water quality analysis feature generates tailored recommendations for purification based on real-time sensor data. For instance, high TDS levels prompt a recommendation for filtration, whereas elevated turbidity suggests sedimentation. These customized suggestions help users effectively address specific contaminants and maintain safe drinking water. Ultimately, water quality analysis and the accompanying recommendations empower individuals to make informed decisions about water treatment. 
+1.1.5	Hydrology Resources
+In HydroSense, hydrology resources supply users with extensive information and educational content on water quality and management, helping them understand various treatment methods. By offering a comprehensive selection of articles, guides, and tutorials, these resources broaden users' knowledge of water safety, sources of contamination, and effective purification strategies. This equips individuals to make informed decisions about water consumption and treatment. Additionally, hydrology resources encourage awareness of the importance of maintaining clean water and adopting sustainable water management practices. Ultimately, they are essential in promoting water safety and sustainability, supporting the project goal of ensuring clean and safe water is accessible to everyone.
+1.2	Project Scope
+HydroSense provides a holistic solution for monitoring and improving water quality. It involves creating an Arduino-based device equipped with advanced sensors to measure TDS, turbidity, water temperature, and pH. In tandem, a web application visualizes and analyzes the collected data, delivering real-time insights into water quality and offering suggestions for improvement. Ultimately, the project objective is to empower individuals to make informed decisions about their water sources and take action to maintain or enhance water quality.
+1.2.1	Arduino-Powered Device
+HydroSense involves designing and constructing a water quality monitoring device based on the Arduino platform. This device integrates sensors for measuring TDS, Turbidity, water temperature, and pH levels to ensure accurate data acquisition. It includes a screen for displaying real-time data, making it easy for users to monitor water quality directly from the device. This setup ensures that users are able to effectively assess and maintain water quality.
+1.2.2	Sensor Types
+HydroSense incorporates high-quality sensors specifically selected to measure essential parameters such as TDS, turbidity, water temperature, and pH. These sensors, chosen for their precision and sensitivity, ensure accurate and dependable data collection, offering crucial insights into water quality. By using these advanced sensors, the device thoroughly evaluates water conditions, enabling users to detect contaminants and respond effectively. Incorporating advanced sensors is fundamental to achieving efficient water quality monitoring and management.
+1.2.2.1	TDS (Total Dissolved Solids) Sensor
+This sensor quantifies the concentration of dissolved solids in water, including salts, minerals, metals, and organic compounds. This measurement provides valuable information about the waters overall mineral content and purity. High TDS levels potentially indicate the presence of contaminants or pollutants, such as heavy metals or agricultural runoff, which are able to affect water quality and pose health risks to consumers. Health risks include gastrointestinal problems, such as stomach pain and diarrhea, and in extreme cases, cause kidney disease, liver disease, and even death. [TD2022]
+1.2.2.2	pH Sensor
+The pH sensor is essential for determining the acidity or alkalinity of the water, providing critical information about its chemical balance. Monitoring pH levels helps detect potential contaminants or pollutants, such as acids or bases, that potentially affect the water safety for consumption. This sensor ensures that users are aware of any water quality changes that may require intervention. The pH sensor plays a crucial role in maintaining water safety and purity.	
+1.2.2.3	Turbidity Sensor
+The turbidity sensor measures the cloudiness or haziness of the water, indicating suspended particles. By monitoring turbidity levels, users are able to assess the aesthetic quality and potential contamination of the water. High turbidity levels potentially suggest the presence of pollutants or pathogens, prompting necessary treatment actions. This sensor is vital for ensuring the waters clarity and overall safety.
+1.2.2.4	Water Temperature Sensor
+The water temperature sensor tracks the water temperature during testing, an essential factor for accurate water quality evaluations. Because temperature affects various chemical and physical properties including TDS readings monitoring, the device can refine TDS measurements for greater precision. As a result, users obtain reliable water quality data, enhancing the overall effectiveness of the monitoring system.
+1.2.3	Web Application and Device Compatibility
+The software development process includes building a web application as a unified hub for displaying and analyzing real-time water quality measurements gathered by the Arduino-powered device. Users can examine and interpret this data from any internet-capable device such as a smartphone, tablet, or computer, access recommendations to enhance water quality, and consult various hydrology resources. By offering a user-friendly interface, the application facilitates seamless interaction with the Arduino device and delivers valuable insights into water sources.
+1.2.4	Data Visualization Features
+In the context of the water quality monitoring project, the data presented in the web application include various visualizations to represent water quality parameters effectively. These visualizations potentially include graphs and color-coded indicators to comprehensively overview TDS, Turbidity, water temperature, and pH levels. By using these visual aids, users are able to interpret the data intuitively and make informed decisions regarding water quality management. The goal is to present the data in a format that is easy to understand for users with varying levels of expertise and to facilitate quick insights into the quality of the water being monitored.
+1.2.5	Water Quality Recommendation System
+Based on the collected sensor data, the water quality recommendation system is designed to offer tailored guidance for water purification methods based on real-time sensor data analysis. This system analyzes the collected data from TDS, Turbidity, water temperature, and pH sensors, identifying specific contaminants and their concentrations in the water. By gathering this information through the water, the system generates personalized recommendations for effective water treatment strategies, such as filtration or sedimentation. These recommendations are integrated into the web application interface, providing users with actionable insights to address water quality issues promptly and ensure access to clean and safe drinking water. The Water Quality Recommendation System equips users with tools for effective water management and sustainable practices.
+1.2.6	Hydrology Resources
+This project develops a hydrology resource to provide users with knowledge and insights into water safety practices and sustainable water management. Integrated into the web application, this resource offers articles and guides that cover a range of topics—including the importance of monitoring water quality, the impact of contaminants on human health and the environment, and best practices for water purification and conservation. Through HydroSense, users are equipped with the tools and information to enhance awareness, foster engagement, and ensure global access to clean water.
+
+METHODOLOGY
+2.1	Hardware Requirements and Implementation.
+HydroSense utilizes an integrated software-hardware system to provide accessible and efficient real-time water quality monitoring. The system employs an Arduino-based device equipped with sensors that continuously collect data on essential water parameters, specifically Total Dissolved Solids (TDS), pH, turbidity, and temperature. This collected data is processed and transmitted to a web application, offering users real-time insights into water quality. This methodology emphasizes dependable data collection and ease of use, particularly beneficial for communities with limited resources. The specific hardware components used in HydroSense is shown in Table 1.
+
+Function	Components	Implementation
+Microcontroller	ESP32-WROOM-32D	Used for data acquisition, initial processing and web portal.
+	Arduino UNO	
+Sensors	SEN0244	TDS Sensor
+	SEN0161	pH Sensor
+	TSW-20M	Turbidity Sensor
+	DS18B20	Water Temperature Sensor
+Device Screen	SSID1306	Displaying data directly on the device.
+MicroSD module	HW-125	Storing the web application.
+5V power source	5000mAh battery bank	Used for powering the device.
+Table 1. Hardware Requirements and Implementation.
+2.1	Hardware Wiring Diagram.
+Figure 1 illustrates the connections between the ESP32-WROOM-32D microcontroller and the Arduino Uno, along with the various sensors used in HydroSense. The TDS, Turbidity, temperature, and pH sensors were interfaced with the Arduino Uno via specific interface boards. The Arduino Uno was connected to the ESP32-WROOM-32D microcontroller via a serial connection to transmit sensor data. Additionally, the diagram showed the microSD card module and the OLED display connected to the ESP32 for data storage and device interfacing.
+
+ 
+Figure 1. Hardware Wiring Diagram.
+
+2.2	Sensor Data Accuracy.
+The design and functionality of HydroSense are shaped by several key considerations and constraints. These include ensuring continuous device operation, maintaining accurate data collection despite environmental influences on sensor accuracy and durability, and the reliance on dependable internet connectivity for real-time data transmission.  Ensuring data accuracy is a significant aspect, especially considering the variability in environmental conditions and potential sources of interference. This table provides a comparison based on the accuracy of data gathered by different sensors used in HydroSense and describes the significance of various parameter ranges.
+
+Sensor Type	Range	Description	Accuracy
+TDS Sensor	Data > 300ppm	Excellent	±2% ppm
+	Data between 300ppm – 600ppm	Good	
+	Data between 600ppm – 900ppm	Fair	
+	Data between 900ppm – 1,200 ppm	Poor	
+	Data > 1,200 ppm	Unacceptable	
+Turbidity Sensor	Data ≤ 1 NTU	Ideal Turbidity	±5% NTU
+	Data ≤ 5 NTU	Drinkable Water	
+	Data > 5 NTU	Dirty Water	
+pH Sensor	Data < 6.5 pH	Not Acceptable	±0.1 pH
+	Data between 6.5pH – 8.5pH	Acceptable	
+	Data > 8.5pH	Not Acceptable	
+Water Temperature Sensor		±0.5°C
+Table 2. Sensor Data Accuracy.
+
+2.3	Connectivity Requirements
+HydroSense requires a stable internet connection and compatibility with Wi-Fi for seamless communication. This ensured the device connected to the web application to transmit real-time water quality data and receive updates or recommendations. Just as different browsers were essential for deploying and testing web applications, a reliable internet connection was crucial for integrating the device and enabling easy access to online services like web hosting. Table 3 shows the prerequisites fundamental for the development and successful implementation of the project.
+
+Requirement	Specification
+Mode of Connection	Wi-Fi
+Wi-Fi Range	~5 – 10 meters in line of sight
+Internet Connection	~10 Mbps
+Table 3. Connectivity Requirements.
+
+2.4	Product Features.
+The web application serves as the primary user interface, developed using C++, JavaScript, HTML, and CSS. Its functionalities are organized into four main sections: Homepage, Data Insights, Hydrology Resources, and About. 
+Key functionalities of HydroSense include:
+•	Interfacing: This module manages the initial setup, guiding users through connecting HydroSense to the network via step-by-step prompts in the web application. Successful interfacing ensures smooth data flow from the sensors to the application. The process involves connecting the Arduino to a router, connecting the user's device to the same network, and accessing the device's IP address in a browser. The system verifies the Wi-Fi connection and displays the web server interface upon confirmation.
+•	Water Quality Analysis: This system uses the sensors to measure TDS, pH, and turbidity of a water sample. Upon successful data transmission after immersing a sensor, the system combines these measurements to assess overall water quality and identify potential health risks.
+•	Data Visualization: The web application provides intuitive data visualization through graphs and charts, allowing users to monitor real-time trends and view historical data for each parameter. Users can start and stop data logging via the interface, with collected data stored in a CSV file for real-time and historical views, and an export option is available for downloading data for further analysis.
+•	Water Quality Recommendation: Based on the analyzed sensor data, the system provides tailored suggestions for water purification methods. These recommendations are generated based on predefined sensor thresholds and combinations of parameter values, guiding users on appropriate treatment strategies such as filtration or sedimentation.
+•	Hydrology Resources: The system includes a comprehensive library of hydrology resources within the web application. These resources offer educational materials, such as articles and guides from reputable sources on water characteristics, treatment methods, water safety practices, and the health impacts of contaminants. Users can access these resources to enhance their understanding of water quality issues and potential solutions.
+Software quality was assessed using ISO/IEC 9126, focusing on usability, efficiency, and functionality metrics like accuracy, compliance, learnability, and time behavior. Hardware was evaluated using ISO/IEC 30141, examining trustworthiness (availability, confidentiality, integrity, reliability, resilience, safety) and functional characteristics (heterogeneity, modularity, connectivity, compliance, real-time capability). 
+
+RESULTS, DISCUSSIONS AND IMPLICATIONS
+HydroSense underwent rigorous performance testing and evaluation to validate its effectiveness and reliability in real-time water quality monitoring. This evaluation was conducted using established frameworks, specifically the ISO/IEC 9126 software quality model [GFG2024] and the ISO/IEC 30141 IoT system reference architecture model [ISO2018]. These models provided a structured approach to assess various aspects of the system, including its functionality, efficiency, usability, trustworthiness, and architectural integrity. The test aimed to ensure the system performed as designed and met the requirements for providing accurate water quality data and recommendations to users.
+A key part of the results stemmed from the continuous data collection during a one-day testing period, where HydroSense successfully gathered and logged over 86,400 data points for the four measured parameters namely TDS, pH, turbidity, and temperature. These readings, taken at one-minute intervals, were effectively processed and visualized through the web application, providing clear, real-time graphs and charts. This demonstrated the systems capability for continuous monitoring and data handling, allowing users to readily understand current water conditions and identify trends over time. While the temperature readings showed a slight deviation, this was attributed to the ambient room temperature during testing, indicating the systems sensitivity to environmental factors, which is an important consideration for deployment in varied conditions.
+HydroSense ability to analyze sensor data and generate specific water treatment recommendations based on predefined thresholds was a significant outcome. This functionality provides tailored guidance to users on how to address detected contaminants, directly contributing to the project's goal of ensuring access to clean and safe drinking water. The system capacity to suggest accessible, homemade treatment methods is particularly relevant for communities with limited access to advanced purification technologies. Furthermore, the integrated health risk evaluation system provides users with crucial information about potential health implications associated with different water quality levels, empowering informed decision-making regarding water consumption and treatment. This directly supports public health by educating users and promoting proactive safety measures.
+3.1	ISO/IEC 9126 Evaluation Results.
+The performance evaluation results using the ISO/IEC 9126 software quality model indicated strong performance across several attributes. These ratings, assessed on a scale of 0% to 100%, showed the systems proficiency. While the system achieved high scores, including 100% in areas like accuracy, interoperability, and time behavior, indicating its ability to accurately detect contaminants, integrate sensors effectively, and visualize real-time data efficiently, the evaluation also highlighted areas for potential refinement. The table below summarizes the ISO/IEC 9126 evaluation results as well as its interpretation.
+
+Product Features	Software Quality Models and Attributes	Software Quality Criteria	Mean Score	Feature Mean Score
+Hydrology Resources	Usability
+(ISO/IEC-9126)	Understandability	100%	95%
+		Learnability	100%	
+		Operability	100%	
+		Attractiveness	100%	
+		Compliance	75.00%	
+Contaminant Detection	Functionality
+(ISO/IEC-9126)	Accuracy	100%	95.90%
+		Interoperability	100%	
+		Compliance	85.71%	
+Data Visualization	Efficiency
+(ISO/IEC-9126)	Resource Utilization	75.00%	91.67%
+		Time Behavior	100%	
+		Compliance	100%	
+Water Quality Recommendation	Usability
+(ISO/IEC-9126)	Understandability	100%	95%
+		Learnability	100%	
+		Operability	80%	
+		Compliance	100%	
+Table 4. Summary of Features, Attributes, and Results of ISO/IEC 9126 Evaluation.
+3.2	ISO/IEC 30141 Results.
+The evaluation using the ISO/IEC 30141 IoT system reference architecture model also indicated a strong foundation for HydroSense, with high ratings, assessed on a scale of 0% to 100%, across various aspects of its architecture. The system demonstrated excellent performance in areas such as availability, integrity, reliability, resilience, safety, heterogeneity, and compliance, all receiving high scores. These results highlight the robustness and dependability of the systems underlying architecture. However, areas that received slightly lower, though still "Very Good," scores, included modularity (75%), network connectivity (80%), real-time capability (85.71%), and confidentiality (83.33%). These scores, while not indicating significant deficiencies, suggest opportunities for future optimization to enhance the systems flexibility, stability of network communication, precision in real-time operations, and data security measures. Table 5 summarizes the ISO/IEC 30141 evaluation results.
+Hardware	Characteristics of IoT Systems	Related Characteristics	Mean Score	Characteristic Mean Score
+
+
+
+
+
+
+
+
+
+HydroSense	IoT system Trustworthiness characteristics
+(ISO/IEC-30141)	Availability	100.00%	97.22%
+		Confidentiality	83.33%	
+		Integrity	100.00%	
+		Reliability	100.00%	
+		Resilience	100.00%	
+		Safety	100.00%	
+	IoT system architecture characteristics
+(ISO/IEC-30141)	Heterogeneity	100.00%	91.67%
+		Modularity	75.00%	
+		Network Connectivity	80%	
+	IoT system functional characteristics
+(ISO/IEC-30141)	Compliance	100.00%	95.24%
+		Data Characteristics	100.00%	
+		Real-time Capability	85.71%	
+Table 5. ISO/IEC 30141 IoT System Reference Architecture Model Evaluation Results.
+
+3.3	User Acceptance Testing.
+The test provided particularly valuable insights into the systems usability and user satisfaction from the perspective of potential end-users, with 30 participants providing ratings. The criteria listed have a mean score ranging from 4.30 to 4.67. The results from this testing were overwhelmingly positive, with the majority of criteria receiving "Very Good" ratings. This strongly indicates that potential users found HydroSense to be intuitive and easy to operate, with a user-friendly interface that facilitates understanding and interaction. The clarity of information display, the ease of accessing and utilizing the hydrology resources, and the straightforwardness of the water treatment recommendations were highlighted as significant strengths during this testing phase. These findings guide the development of targeted improvements in upcoming versions. Participants highlighted specific features that exceeded expectations, such as the user-friendly interface and accurate data visualization. This feedback is instrumental in aligning the application with user expectations and industry benchmarks. Table 6 summarizes the User Acceptance Testing Results.
+Criteria	Mean Score	Interpretation
+Accuracy	4.60	Very Good
+Auditability	4.60	Very Good
+Communication Commonality	4.67	Very Good
+Completeness	4.60	Very Good
+Conciseness	4.43	Very Good
+Consistency and Understandability	4.51	Very Good
+Controllability	4.49	Very Good
+Data Commonality	4.63	Very Good
+Decomposability	4.43	Very Good
+Error Tolerance	4.40	Very Good
+Execution Efficiency	4.53	Very Good
+Expandability	4.53	Very Good
+Generality	4.46	Very Good
+Hardware Independence	4.37	Very Good
+Instrumentation	4.53	Very Good
+Modularity	4.33	Very Good
+Observability	4.34	Very Good
+Operability	4.42	Very Good
+Security	4.63	Very Good
+Self-Documentation	4.30	Very Good
+Functional Simplicity	4.50	Very Good
+Structural Simplicity	4.40	Very Good
+Code Simplicity	4.50	Very Good
+Software System Independence	4.50	Very Good
+Traceability	4.50	Very Good
+Training	4.60	Very Good
+Table 6. Summary of Survey Results.
+
+The top highest criteria for HydroSense are communication commonality (4.67), execution efficiency (4.53), and expandability (4.53). Communication commonality reflects standard interfaces and protocols, ensuring seamless communication between components and a user-friendly interface. Execution efficiency highlights the system runtime performance, showing that HydroSense processes data swiftly and reliably during real-time water quality monitoring. Expandability demonstrates the system ability to extend its architectural, data, or procedural design, allowing for future enhancements, such as additional sensors or features. These high scores underscore HydroSense robust design and adaptability to meet diverse user needs. This solid performance in key areas reinforces HydroSense as an effective and scalable solution for water quality management. It positions the system to easily accommodate future technological advancements and evolving user requirements.
+Conversely, the criteria with relatively lower scores are self-documentation (4.30), modularity (4.33), and observability (4.34). Self-documentation pertains to the degree to which the source code provides meaningful comments and explanations, which improves easier maintenance and development. Modularity reflects the independence of program components, where some modules are likely to have dependencies that are optimized. Observability refers to the ability to monitor system states and outputs, where improvements help users better trace and identify issues during operation. Despite these areas for enhancement, all criteria received ratings categorized as very good, ranging from 4.30 to 4.67, showcasing HydroSense overall high quality and effectiveness in delivering its intended functionality.
+The results validate HydroSense as an effective, reliable, and user-friendly tool. Its ability to provide accurate data, actionable recommendations, and educational resources directly addresses the need for accessible water safety solutions, supporting SDG 6. High usability scores indicate suitability for diverse users. Robust hardware performance ensures reliability. Identified areas for improvement guide future development. The local hosting model benefits areas with limited internet, though cloud integration is recommended. HydroSense demonstrates the potential of IoT technology for critical public health and environmental challenges.  
+
+CONCLUSIONS AND RECOMMENDATIONS
+4.1	Conclusion
+In conclusion, the HydroSense capstone project successfully achieved its primary objectives by delivering a functional and integrated system for real-time water quality monitoring and enhanced user awareness. The developed Arduino-based device, equipped with a suite of sensors for measuring TDS, pH, turbidity, and temperature, proved effective in providing real-time water quality data. The design prioritized accessibility and operability, ensuring that the device could be utilized in various environments, particularly in underserved communities. The complementary web application served as a crucial centralized platform for accessing and visualizing the collected data through intuitive graphs and charts, significantly facilitating easy interpretation of complex water quality information. The web application also supported historical data logging and analysis, enabling users to track trends over time and gain a deeper understanding of their water sources.
+A key success of the HydroSense system is its demonstrated ability to analyze the collected sensor data and generate specific, tailored recommendations for water treatment. This feature directly empowers users by offering actionable guidance based on the detected parameter levels, enabling them to implement appropriate purification methods to improve water quality and mitigate health risks. Furthermore, the successful integration of comprehensive hydrological resources within the system effectively addressed the need for educational materials. These resources provided users with valuable information on water purification techniques and management practices, helping them to better interpret their water quality data and make informed decisions about water usage and safety. Overall, HydroSense successfully integrates real-time monitoring, data visualization, personalized recommendations, and educational resources, aligning well with the project's design objectives and demonstrating a viable solution for improving water safety awareness and practices.
+4.2	Recommendation
+Based on the project's development, testing, and evaluation, several recommendations are proposed to further enhance HydroSense's capabilities, improve its robustness, and broaden its potential impact:
+Refine Modular Design: It is recommended to further refine the modular design of the system components. Enhancing modularity will significantly improve the maintainability and testability of both the hardware and software elements. This approach facilitates easier updates, debugging, and troubleshooting, making the system more adaptable for future upgrades and modifications. A more modular design reduces interdependencies between different parts of the system, allowing for independent development and testing, which can streamline the development process and improve overall system stability.
+4.2.1	Expand Observability Features.
+Expanding the observability features of the system is highly recommended. This involves incorporating more detailed error reporting mechanisms and comprehensive system logs. Improved observability will greatly enhance the ability of users and developers to diagnose issues and understand system behavior in real-time, contributing to improved reliability and user confidence. Detailed logging can provide valuable insights into system performance, sensor readings, and communication status, aiding in troubleshooting and performance optimization.
+4.2.2 	Transition to Cloud-Based Data Storage.
+Migrating the historical data storage from local storage (microSD card) to a cloud-based platform is a crucial recommendation. This transition would significantly enhance data accessibility and scalability, allowing users to access their historical water quality records from any internet-connected device regardless of their physical location. Cloud storage also facilitates advanced analytics on larger datasets, enabling the tracking of long-term water quality trends across different locations. This feature further enhances HydroSense's utility by providing a more robust and accessible method for preserving and analyzing valuable historical data.
+4.2.3	Integrate Additional Sensors.
+Integrating additional sensors into the HydroSense device is recommended to expand its ability to assess a wider range of water quality parameters. Parameters such as dissolved oxygen (DO), chlorine levels, and heavy metal detection would provide a more comprehensive water quality analysis. This expansion would make the system suitable for a more diverse set of applications beyond basic drinking water assessment, including monitoring industrial water discharge, aquaculture water quality, and environmental water bodies. A more comprehensive suite of sensors would significantly increase the system's versatility and relevance in various contexts of water management and monitoring.
+4.2.4	Develop a Dedicated Mobile Application.
+While the current web application provides accessibility, developing a dedicated mobile application for both Android and iOS platforms is recommended. A mobile application could offer a more streamlined and user-friendly experience, potentially with enhanced offline capabilities for data collection in remote areas with limited internet connectivity. A mobile app could also leverage smartphone features such as GPS for geotagging water quality data, contributing to spatial analysis of water quality.
+4.2.5	Enhance Power Management.
+Investigating and implementing more advanced power management strategies is recommended to extend the device's battery life. Optimizing power consumption of sensors, microcontrollers, and the Wi-Fi module can significantly increase the duration of operation on a single charge, making the device more practical for continuous monitoring in remote locations where access to power outlets is limited. This could involve implementing sleep modes or optimizing data transmission frequency.
+4.2.6	Improve Sensor Calibration Procedures.
+Developing and implementing more user-friendly and robust sensor calibration procedures is recommended. Ensuring accurate sensor readings over time is critical for the reliability of the data and recommendations provided by HydroSense. Simplified calibration steps and clear guidance within the application or documentation would empower users to maintain the accuracy of their devices, ensuring the continued integrity of the water quality data.
+
+REFERENCES
+
+A.	Websites and Other Online Sources
+
+{GFG2024}	GeeksforGeeks. (2024, July 3). ISO/IEC 9126 in Software engineering. GeeksforGeeks. https://www.geeksforgeeks.org/iso-iec-9126-in-software-engineering/ 
+
+B.	Articles
+
+{BC2021}	Baclig, C. E. (2021, July 8). WHO-Unicef report: Nearly half of Filipinos get safe drinking water. INQUIRER.net. https://newsinfo.inquirer.net/1456912/who-unicef-report-nearly-half-of-filipinos-get-safe-drinking-water
+
+{DV2023}	De Villa, K. (2023, April 14). DOH reports surge in food, waterborne diseases. INQUIRER.net. https://newsinfo.inquirer.net/1756215/doh-reports-surge-in-food-waterborne-diseases
+
+{WHO2023}    	World Health Organization: WHO. (2023, September 13). Drinking-water. https://www.who.int/news-room/fact-sheets/detail/drinking-water
+
+C.	Guides/ Books	
+
+{ISO2018}	ISO/IEC. (2018). Internet of Things (IoT) – Reference architecture. In ISO/IEC 30141 (1.0). https://cdn.standards.iteh.ai/samples/100717/347f56bb585543499115c3adc46cb03b/ISO-IEC-30141-2018.pdf 
+
+{TD2022}	Culligan Quench. (2022, November 22). Are total dissolved solids safe to drink? | Culligan Quench. https://quenchwater.com/blog/total-dissolved-solids/ 
+
+{UN2021}	United Nation Water. (2021, July). Summary Progress Update 2021: SDG 6 — water and sanitation for all. Retrieved from. https://www.unwater.org/sites/default/files/app/uploads/2021/12/SDG-6-Summary-Progress-Update-2021_Version-July-2021a.pdf
+
