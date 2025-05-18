@@ -1,0 +1,255 @@
+/* General Styles */
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    /* overflow-y: scroll ; */
+}
+body {
+   
+
+    background-color: aliceblue;
+    overflow-y: scroll;
+
+}
+
+/* Navbar Styles */
+.navbar{
+     background-image: url('resources/brand/backgroundcolor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar-brand img {
+    max-height: 40px;
+}
+.navbar-collapse {
+    text-align: center;
+    margin-left: 30px;
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Water Droplet Styles */
+.water-droplet {
+    position: relative;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.water-droplet img {
+    width: 80px;
+    height: auto;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Content and UI Elements */
+.content {
+    background-color: aliceblue;
+    /* height: auto; */
+    margin-bottom: 50px;
+    
+
+}
+.highcharts-credits {
+    display: none;
+}
+.gauges {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.buttonDiv {
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 10px;
+}
+.buttonDiv button {
+    color: #000000;
+    width: 20%;
+    margin: 0px 30px;
+    border: 1px solid #000;
+}
+.showMoreDiv {
+    margin: 0 auto; /* Centers the div horizontally */
+
+    margin-top: 5vh;
+    padding: 20px 10px 20px 10px;
+    display: none;
+    width: 95%;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #000;
+   
+}
+.showMoreChild{
+    text-align: center;
+}
+/* .sensorDescription p {
+    text-align: left;
+} */
+
+.showMoreData {
+    display: flex;         /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: left;   /* Center items horizontally */
+    text-align: left;    /* Center text inside the div */
+    
+}
+.showMoreData p {
+margin-left: 40px;}
+.showMoreData img {
+    max-width: 100%;       /* Ensure image scales with container */
+    height: auto;          /* Maintain aspect ratio */
+}
+#getSensorDescription{
+    text-align: left;
+}
+
+.dataContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the space between items as needed */
+    
+}
+
+.dataContainer p {
+    margin: 0;
+}
+
+/* DATA INSIGHTS  */
+.lineChart{
+    height: 300px;
+}
+.chartTypeDiv {
+    display: flex;
+    width: 200px;                /* Fixed width for centering */
+    justify-content: center;     /* Center button horizontally inside .chartTypeDiv */
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin: 0 auto;              /* Center .chartTypeDiv horizontally within its parent */
+    margin-top: 20px;
+}
+.bottomDataInsights {
+    margin: 5vh auto 0; /* Centers the div horizontally and sets top margin */
+    padding: 20px 10px; /* Simplified padding */
+    width: 95%;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #000;
+    display: none;
+    text-align: center;
+}
+
+.bottomDataInsightsDiv {
+    height: 300px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+#data-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Adjust background color to match your table header */
+    z-index: 2;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+.savedDataText{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#file-list ul li {
+    display: flex;
+    justify-content: space-between; /* Distributes space between the file name and delete button */
+    align-items: center; /* Vertically aligns the items within the list item */
+    padding: 5px 0; /* Adds some padding for better spacing */
+}
+#file-list ul li a{
+    background-color: transparent;
+    border: none;
+    color: #0084ff;
+    width: 50%;
+text-align: left;
+}
+#file-list ul li button{
+    align-items: right;
+    height: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+}
+
+
+/* Rotation for Mobile */
+@media screen and (max-width: 738px) {
+   
+    html {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        height: 100vw;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        
+        
+    }
+    body {
+        width: 93vh;
+        height: 100vw;
+        overflow: auto;
+        margin: 0;
+        
+        padding: 0;
+    }
+    .gauges {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .gauge {
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+}
+body {
+    font-size: 16px; /* This sets the base font size */
+}
+
+h3 {
+    font-size: 1.5rem; /* 32px relative to body */
+}
+
+p {
+    font-size: 1rem; /* 16px relative to body */
+}

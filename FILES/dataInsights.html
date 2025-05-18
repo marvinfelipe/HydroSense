@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Insights</title>
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="myStyle.css" />
+  </head>
+  <body style="overflow-y: scroll">
+    <div id="loading-screen">
+      <div class="water-droplet">
+        <img src="resources/brand/loadingScreenIcon.PNG" alt="Loading" />
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+          <img src="resources/brand/aboutus.png" alt="Hydrosense Logo" style="max-height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="dataInsights.html">Data Insights</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="hydrologyResources.html">Hydrology Resources</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+    <div class="content">
+      <div class="mb-3 col-12 chartTypeDiv">
+        <button type="button" class="btn" id="chartTypeButton">
+          Grouped Data
+        </button>
+      </div>
+
+      <div id="lineChartContainer"></div>
+
+      <div class="mb-3 col-12 chartTypeDiv">
+        <button onclick="showMore()" class="btn">Show More</button>
+      </div>
+      <div class="bottomDataInsights row showMoreDiv">
+        <div class="bottomDataInsightsDiv showMoreChild col-12 col-md-4">
+          <p class="savedDataText">Saved Data</p>
+          <div id="file-list"></div>
+        </div>
+
+        <div
+          class="bottomDataInsightsDiv showMoreChild col-12 col-md-8 text-center"
+        >
+          <p class="savedDataText">Data Table</p>
+
+          <table class="table table-bordered" id="data-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Temperature (°C)</th>
+                <th>TDS (ppm)</th>
+                <th>Turbidity (NTU)</th>
+                <th>pH</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- DATAS OF TABLE HERE -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="myScript.js"></script>
+    <script src="DataInsightsScript.js"></script>
+  </body>
+</html>
